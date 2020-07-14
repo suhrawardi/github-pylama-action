@@ -1,0 +1,12 @@
+on: push
+name: on push
+jobs:
+  github-pylama-action:
+    name: GitHub Action for Pylama
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: GitHub Action for Pylama
+      uses: suhrawardi/github-pylama-action@master
+      with:
+        args: pylama --help
