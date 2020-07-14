@@ -9,4 +9,4 @@ jobs:
     - name: GitHub Action for Pylama
       uses: suhrawardi/github-pylama-action@master
       with:
-        args: pylama --help
+        args: pylama --version
